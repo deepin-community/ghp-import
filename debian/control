@@ -1,15 +1,35 @@
-Source: template-repository
-Section: unknown
+Source: ghp-import
+Section: python
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Uploaders:
+ Andrew Starr-Bochicchio <asb@debian.org>,
+Build-Depends:
+ debhelper-compat (= 13),
+ python3,
+Build-Depends-Indep:
+ dh-python,
+ pybuild-plugin-pyproject,
+ python3-poetry,
+ python3-setuptools,
+Rules-Requires-Root: no
+Standards-Version: 4.6.1
+Vcs-Browser: https://salsa.debian.org/python-team/packages/ghp-import
+Vcs-Git: https://salsa.debian.org/python-team/packages/ghp-import.git
+Homepage: https://github.com/davisp/ghp-import
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: ghp-import
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+ ${shlibs:Depends},
+Enhances:
+ pelican,
+Description: Easily import docs to your gh-pages branch
+ ghp-import is a Python script meant to make using GitHub's gh-pages
+ branches for hosting documentation simple.
+ .
+ Inside your repository just run `ghp-import $DOCS_DIR` where $DOCS_DIR
+ is the path to the built documentation. This will write a commit to your
+ gh-pages branch with the current documents in it.

@@ -1,5 +1,88 @@
-template-repository (1.0-1) unstable; urgency=medium
+ghp-import (2.1.0-3) unstable; urgency=medium
 
-  * Initial release
+  [ Debian Janitor ]
+  * [292e17a] Set upstream metadata fields: Bug-Database, Bug-Submit, Repository, Repository-Browse.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sun, 16 Oct 2022 22:11:51 +0100
+
+ghp-import (2.1.0-2) unstable; urgency=medium
+
+  * Team upload
+  * d/control: Add setuptools to Build-Depends
+    (Closes: #1020059)
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Wed, 28 Sep 2022 17:25:48 +0200
+
+ghp-import (2.1.0-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 2.1.0
+  * d/control: Update Standards-Version to 4.6.1
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Tue, 17 May 2022 20:10:30 +0200
+
+ghp-import (2.0.2-1) unstable; urgency=medium
+
+  * Team upload
+  * d/gbp.conf: Extend some more default content
+  * d/watch: Update to version 4, use GH project to scan
+  * New upstream version 2.0.2
+  * d/copyright: Update content
+  * d/control: Run wrap-and-sort -ast
+  * d/control: Bump debhelper version to 13
+  * d/control: Adding entry Rules-Requires-Root: no
+  * d/control: Update Standards-Version to 4.6.0
+    No further changes needed.
+  * d/control: Add B-D for using poetry and pyproject
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Fri, 25 Feb 2022 16:08:26 +0100
+
+ghp-import (0.5.5-3) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 10 to 12.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.5.0, no changes needed.
+
+ -- Sandro Tosi <morph@debian.org>  Wed, 15 Sep 2021 00:08:24 -0400
+
+ghp-import (0.5.5-2) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/copyright: Use https protocol in Format field
+  * Use debhelper-compat instead of debian/compat.
+
+  [ Sandro Tosi ]
+  * Switch to python3; Closes: #936610
+  * debian/control
+    - update Enhances to `pelican`
+    - bump Standards-Version to 4.4.1 (no changes needed)
+
+ -- Sandro Tosi <morph@debian.org>  Tue, 24 Dec 2019 20:43:26 -0500
+
+ghp-import (0.5.5-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Andrew Starr-Bochicchio <asb@debian.org>  Sun, 02 Jul 2017 18:30:33 -0500
+
+ghp-import (0.5.4-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Package should be Architecture: all.
+  * Bump Standards-Version to 3.9.8.
+
+ -- Andrew Starr-Bochicchio <asb@debian.org>  Sat, 24 Dec 2016 14:09:30 -0500
+
+ghp-import (0.4.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #753962).
+
+ -- Andrew Starr-Bochicchio <asb@debian.org>  Mon, 04 Aug 2014 21:09:49 -0400
